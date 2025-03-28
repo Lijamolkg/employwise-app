@@ -1,0 +1,107 @@
+/* Users List Container */
+.users-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading */
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* User List */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* User Item */
+.user-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.user-item:hover {
+    transform: scale(1.02);
+}
+
+/* User Image */
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* User Name */
+.user-name {
+    flex-grow: 1;
+    font-size: 18px;
+    color: #444;
+    font-weight: bold;
+}
+
+/* Buttons */
+button, .edit-link {
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.edit-link {
+    background: #007bff;
+    color: white;
+    margin-right: 8px;
+}
+
+.edit-link:hover {
+    background: #0056b3;
+}
+
+.delete-button {
+    background: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background: #c82333;
+}
+
+/* Pagination Buttons */
+.pagination-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.pagination-buttons button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.pagination-buttons button:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+}
